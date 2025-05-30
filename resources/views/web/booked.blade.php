@@ -1,6 +1,6 @@
 @extends('web.layout')
 @section('content')
-        <section >
+        <section>
             <div class="container" >
                 <div class="title-call-us">
                     <h1>أطلب حجز</h1>
@@ -20,7 +20,7 @@
 
                 @if(session()->has('message'))
                 <div class="alert alert-success alert-dismissible">
-                <h5><i class="pe-7s-check"></i> تم حجز موعد انتضر منا اتصال</h5>
+                <h5><i class="pe-7s-check"></i> تم حجز موعد انتظر منا اتصال</h5>
                 نتمنى لك السلامة
                 </div>
                 @endif
@@ -33,10 +33,10 @@
                         <input type="text" name="email" id="" placeholder="الرجاء ادخال البريد الالكتروني">
                     </div>
                     <div class="gruop-input-call-us">
-                        <label for="">رقم الموبايل :-</label>
-                        <input type="text" name="phone" id="" placeholder="الرجاء ادخال رقم الموبايل">
+                    <label for="">رقم الموبايل :-</label>
+                    <input type="text" name="phone" id="" placeholder="الرجاء ادخال رقم الموبايل">
                     </div>
-                    <div class="gruop-input-call-us">
+                    <div class="gruop-inp/ut-call-us">
                         <label for="">رسالتك :-</label>
                         <textarea name="message" id="" cols="30" rows="10" placeholder="ادخل رسالتك"></textarea>
                     </div>
@@ -55,11 +55,12 @@
                     <option data-select2-id="49">وجع</option>
                     <option data-select2-id="50">تسويس</option>
                     </select>
-                    </div>                                                                                                                 
+                    </div>                                                                                                       
                     </div>
                     <div class="content-call-us-submit">
                        <input type="submit" value="أرسل طلبك">
                     </div>
+                </div>
                 </form>
                 </div>
             </div>
